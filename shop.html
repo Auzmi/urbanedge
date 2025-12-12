@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — UrbanEdge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="UrbanEdge logo" class="logo">
+      <span class="brand-name">UrbanEdge</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Shop</h1>
+    <p class="lead">Dark luxury streetwear — ready to drop.</p>
+
+    <div class="filters">
+      <select id="filter-cat">
+        <option value="all">All categories</option>
+        <option value="hoodie">Hoodies</option>
+        <option value="tee">Tees</option>
+        <option value="pants">Pants</option>
+      </select>
+    </div>
+
+    <div class="grid" id="products-grid">
+      <!-- Products populated by JS -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 UrbanEdge</div>
+  </footer>
+
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <div class="cart-actions">
+        <button id="checkout-btn" class="btn">Checkout</button>
+        <button id="close-cart" class="btn alt">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

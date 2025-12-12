@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — UrbanEdge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="UrbanEdge logo" class="logo">
+      <span class="brand-name">UrbanEdge</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>If you'd like to reach us about wholesale, press, or collaborations — drop a line.</p>
+
+    <form id="contact-form" class="contact-form">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" rows="6" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p class="note">This demo contact form doesn't send email. When publishing, connect to an email service or server endpoint.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 UrbanEdge</div>
+  </footer>
+
+  <script>
+  document.getElementById('contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thanks — message saved locally (demo). Replace with backend endpoint for real messages.');
+  });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

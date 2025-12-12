@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UrbanEdge — Style That Speaks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <!-- Inline logo -->
+      <img src="assets/logo.svg" alt="UrbanEdge logo" class="logo">
+      <span class="brand-name">UrbanEdge</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero dark-hero">
+    <div class="hero-inner">
+      <h1>UrbanEdge</h1>
+      <p class="tag">Dark Luxury Streetwear — Elevated essentials for the modern city.</p>
+      <a class="btn" href="shop.html">Explore Collection</a>
+    </div>
+  </header>
+
+  <section class="featured">
+    <h2>Featured</h2>
+    <div class="grid" id="featured-grid">
+      <!-- Featured cards populated by JS -->
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <div>
+      <h3>Craft & Detail</h3>
+      <p>We focus on premium materials, clean silhouettes, and timeless attitude. Limited drops. Thoughtful design.</p>
+      <a href="about.html" class="link">Learn more →</a>
+    </div>
+    <div class="hero-shot">
+      <img src="https://images.unsplash.com/photo-1520975681919-7ea5e2c0b7b9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4f8e3b7e3d3b4b2c" alt="Streetwear shot">
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div>© 2025 UrbanEdge</div>
+    <div class="socials">
+      <a href="#">Instagram</a> · <a href="#">TikTok</a>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <div class="cart-actions">
+        <button id="checkout-btn" class="btn">Checkout</button>
+        <button id="close-cart" class="btn alt">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
